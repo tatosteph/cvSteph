@@ -41,13 +41,19 @@
             <li class="nav-item">
               <a class="nav-link text-white" href="#contact">Contact</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="en.html">EN</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="nl.html">NL</a>
-            </li>
+
           </ul>
+          <div class="dropdown ">
+            <a class="btn btn-secondary dropdown-toggle bg-primary" href="#" role="button" id="dropdownMenuLink"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Langue
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="nl.html">NL</a></li>
+              <li><a class="dropdown-item" href="en.html">EN</a></li>
+
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -169,13 +175,14 @@
               <div class="row align-items-center">
                 <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
                   <div class="d-flex align-items-center">
-                    <p class="fw-bold m-0">FRANCAIS</p>
+                    <p class="fw-bold m-0">FRANÇAIS</p>
                   </div>
                 </div>
                 <div class="col">
                   <div class="progress" data-bs-toggle="tooltip" data-bs-placement="top" title="90%">
                     <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="90"
-                      aria-valuemin="0" aria-valuemax="100">maternelle</div>
+                      aria-valuemin="0" aria-valuemax="100"> <span class="d-none d-md-inline">maternelle</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -186,13 +193,13 @@
               <div class="row align-items-center">
                 <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
                   <div class="d-flex align-items-center">
-                    <p class="fw-bold m-0">NEERLANDAIS</p>
+                    <p class="fw-bold m-0">NÉERLANDAIS</p>
                   </div>
                 </div>
                 <div class="col">
                   <div class="progress" data-bs-toggle="tooltip" data-bs-placement="top" title="50%">
                     <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                      aria-valuemax="100">bonne Compréhension</div>
+                      aria-valuemax="100"> <span class="d-none d-md-inline">bonne Compréhension</span></div>
                   </div>
                 </div>
               </div>
@@ -209,7 +216,7 @@
                 <div class="col">
                   <div class="progress" data-bs-toggle="tooltip" data-bs-placement="top" title="20%">
                     <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0"
-                      aria-valuemax="100">Les bases</div>
+                      aria-valuemax="100"> <span class="d-none d-md-inline">les bases</span></div>
                   </div>
                 </div>
               </div>
@@ -223,8 +230,10 @@
     </section>
     <section class="py-5" id="portfolio">
       <div class="container">
-        <h2 class="fw-bold ">Mon portfolio</h2>
-        <h3 class="fw-light mt-4">Projets perso et pro</h3>
+        <h2 class="fw-bold mb-5">Mon portfolio</h2>
+
+        <h3 class="fw-light mb-5">Projets perso et pro</h3>
+
         <div class="row g-4">
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card">
@@ -232,8 +241,8 @@
               <div class="card-body">
                 <h5 class="card-title">Projet 1 </h5>
                 <p class="card-text">QUIZZ</p>
-                <a href="https://codepen.io/tatosteph/pen/OJvQXOg" class="btn"
-                  style=" background-color: #6610f2; color: white;">Go somewhere</a>
+                <a href="https://codepen.io/tatosteph/pen/OJvQXOg" class="btn bg-primary" style=" color: white">Go
+                  somewhere</a>
               </div>
             </div>
           </div>
@@ -243,8 +252,8 @@
               <div class="card-body">
                 <h5 class="card-title">Projet 2</h5>
                 <p class="card-text">COUNTER</p>
-                <a href="https://codepen.io/tatosteph/pen/abGxgmg" class="btn"
-                  style=" background-color: #6610f2; color: white;">Go somewhere</a>
+                <a href="https://codepen.io/tatosteph/pen/abGxgmg" class="btn bg-primary" style=" color: white">Go
+                  somewhere</a>
                 <dv>
               </div>
             </div>
@@ -255,8 +264,7 @@
               <div class="card-body">
                 <h5 class="card-title">Projet 3</h5>
                 <p class="card-text">IMC</p>
-                <a href="https://codepen.io/tatosteph/pen/KKormeQ" class="btn"
-                  style=" background-color: #6610f2; color: white;">Go
+                <a href="https://codepen.io/tatosteph/pen/KKormeQ" class="btn bg-primary" style=" color: white">Go
                   somewhere</a>
                 <di>
               </div>
@@ -269,8 +277,7 @@
               <div class="card-body">
                 <h5 class="card-title">Projet 4</h5>
                 <p class="card-text">SLIDEER</p>
-                <a href="https://codepen.io/tatosteph/pen/ExgEYKZ" class="btn"
-                  style=" background-color: #6610f2; color: white;">Go
+                <a href="https://codepen.io/tatosteph/pen/ExgEYKZ" class="btn bg-primary" style=" color: white">Go
                   somewhere</a>
               </div>
             </div>
@@ -305,8 +312,7 @@
                 <textarea class="form-control" id="Textarea" rows="3" name="message"></textarea>
               </div>
               <div class="col-12">
-                <button type="submit" class="btn w-100"
-                  style=" background-color: #6610f2; color: white;">Envoyer</button>
+                <button type="submit" class="btn bg-primary" style=" color: white">Envoyer</button>
               </div>
             </form>
           </div>
@@ -321,8 +327,7 @@
         <div class="row gy-4">
           <div class="col-12 col-md-4">
             <a class="text-decoration-none text-dark" href="#"><span
-                class="me-1 tato p-1 text-white rounded-1 bg-primary ">Stephane</span>
-              Mahop </a>
+                class="me-1 tato p-1 text-white rounded-1 bg-primary ">Haut de page</span> </a>
 
           </div>
           <div class="col-12 col-md-4">

@@ -14,16 +14,16 @@ ScrollReveal().reveal(".progress-bar", { delay: 500, origin: "left" });
 
 document.addEventListener("DOMContentLoaded", function () {
   // Sélectionner le bouton qui contrôle le menu déroulant
-  var toggler = document.querySelector(".navbar-toggler");
+  let toggler = document.querySelector(".navbar-toggler");
 
   toggler.addEventListener("click", function () {
     // Attendre la fin de l'animation de déroulement (si applicable)
     setTimeout(function () {
       // Calculer la hauteur du menu de navigation
-      var navHeight = document.querySelector(".navbar").offsetHeight;
+      let navHeight = document.querySelector(".navbar").offsetHeight;
 
       // Sélectionner l'élément qui doit être décalé vers le bas
-      var contentElement = document.querySelector("main"); // Assurez-vous que cet élément est le bon sélecteur pour votre cas d'utilisation
+      let contentElement = document.querySelector("main"); // Assurez-vous que cet élément est le bon sélecteur pour votre cas d'utilisation
 
       // Ajuster le padding-top de l'élément suivant
       contentElement.style.paddingTop = navHeight + "px";
@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 document.addEventListener("DOMContentLoaded", function () {
   // Sélectionner le bouton qui contrôle l'ouverture/fermeture du menu
-  var toggler = document.querySelector(".navbar-toggler");
-  var collapse = document.querySelector(".navbar-collapse");
+  let toggler = document.querySelector(".navbar-toggler");
+  let collapse = document.querySelector(".navbar-collapse");
 
   // Fonction pour vérifier si le menu est ouvert
   function isMenuOpen() {
