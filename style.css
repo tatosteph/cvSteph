@@ -1,0 +1,36 @@
+body {
+  padding-top: 70px;
+  /* Ajustez cette valeur en fonction de la hauteur de votre navbar */
+}
+
+.navbar {
+  background-color: #007bff;
+  /* Couleur de fond */
+  color: #ffffff;
+  /* Couleur du texte */
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+  /* Couleur des liens */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #cccccc;
+  /* Couleur des liens au survol */
+}
+
+.navbar-nav {
+  align-items: center;
+  /* Centrer verticalement les liens dans la barre de navigation */
+}
+
+.nav-link {
+  margin-right: 15px;
+  /* Ajouter de l'espace entre les liens */
+}
+
+.navbar-brand {
+  margin-right: auto;
+  /* Pousser la marque à gauche et les liens à droite */
+}

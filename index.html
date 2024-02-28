@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="scss/style.css" />
+  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
@@ -17,49 +18,48 @@
   <title>Document</title>
 </head>
 
-<body> une nouvelle feuille de route
+<body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"><span class="me-1 p-1 text-white rounded-1 bg-primary">Stephane</span> Mahop
-        </a>
+      <div class="container bg-primary">
+        <a class="navbar-brand text-white" href="#">Stephane Mahop</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
           aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#Mahop">Qui suis-je ?</a>
+              <a class="nav-link text-white" href="#Mahop">Qui suis-je ?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#expertise">Expertises</a>
+              <a class="nav-link text-white" href="#expertise">Expertises</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link text-white" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link text-white" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a href="en.html" class="btn btn-primary rounded-pill" role="button">EN</a>
+              <a class="nav-link text-white" href="en.html">EN</a>
             </li>
             <li class="nav-item">
-              <a href="nl.html" class="btn btn-primary rounded-pill" role="button">NL</a>
+              <a class="nav-link text-white" href="nl.html">NL</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
+
   <main>
     <section class="my-5" id="Mahop">
       <div class="container">
         <div class="row gy-4 gy-md-0 d-flex align-items-center">
           <div class="col-12 col-md-6 profildescription">
-            <h1 class="fw-bold">Mahop Yves Stephane Développeur Front-end</h1>
-            <h2 class="fw-light">Bienvenue dans mon univers créatif</h2>
+            <h1 class="fw-bold">Développeur Front-end</h1>
+            <h2 class="fw-light">Bienvenue dans mon univers</h2>
             <h3 class="fw-light">À propos de moi</h3>
             <p class="fw-light lh-lg">
               "Avec une expérience solide de 10 ans en tant que magasinier, j'ai décidé en 2020 de me réorienter
@@ -84,7 +84,8 @@
     <section class="py-5 bg-light" id="expertise">
       <div class="container">
         <h2 class="fw-bold">Mon expertise</h2>
-        <h3 class="fw-light fs-5">Développement web et design</h3>
+
+        <h3 class="fw-light fs-5 mt-4">Développement web et design</h3>
         <div class="row gy-4 mt-5">
           <div class="col-12 col-md-7">
             <div class="bg-white p-3 d-grid gap-5">
@@ -134,7 +135,7 @@
                 <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
                   <div class="d-flex align-items-center">
                     <i class="fa-brands fa-js me-3 tato text-black fs-3"></i>
-                    <p class="fw-bold m-0">JS</p>
+                    <p class="fw-bold m-0">JAVASCRIPT</p>
                   </div>
                 </div>
                 <div class="col mx-5">
@@ -220,7 +221,7 @@
     <section class="py-5" id="portfolio">
       <div class="container">
         <h2 class="fw-bold ">Mon portfolio</h2>
-        <h3 class="fw-light">Projets perso et pro</h3>
+        <h3 class="fw-light mt-4">Projets perso et pro</h3>
         <div class="row g-4">
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card">
@@ -238,7 +239,7 @@
               <img src="https://picsum.photos/300/200?random=2" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Projet 2</h5>
-                <p class="card-text">CCOUNTER</p>
+                <p class="card-text">COUNTER</p>
                 <a href="https://codepen.io/tatosteph/pen/abGxgmg" class="btn"
                   style=" background-color: #6610f2; color: white;">Go somewhere</a>
                 <dv>
@@ -277,7 +278,7 @@
     <section class="bg-light py-5 shadow-sm p-3 mb-5" id="contact">
       <div class="container py-5">
         <h2 class="fw-bold">Un projet de création web ?</h2>
-        <h3 class="mb-5 fw-light">Allons en discuter autour d'un café</h3>
+        <h3 class="mb-5 fw-light mt-4">Allons en discuter autour d'un café</h3>
         <div class="row gy-4">
           <div class="col-12 col-md-5">
             <img src="img/grab-a-coffee.jpg" alt="coffee" class="w-100">
