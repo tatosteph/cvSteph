@@ -28,7 +28,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link text-white" href="#Mahop">Qui suis-je ?</a>
             </li>
@@ -41,23 +41,38 @@
             <li class="nav-item">
               <a class="nav-link text-white" href="#contact">Contact</a>
             </li>
-
           </ul>
-          <div class="dropdown ">
-            <a class="btn btn-secondary dropdown-toggle bg-primary" href="#" role="button" id="dropdownMenuLink"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Langue
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="nl.html">NL</a></li>
-              <li><a class="dropdown-item" href="en.html">EN</a></li>
-
-            </ul>
+          <!-- Bouton de langue pour les écrans larges, caché sur les écrans plus petits -->
+          <div class="d-none d-lg-block">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle bg-primary" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Langue
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="nl.html">NL</a></li>
+                <li><a class="dropdown-item" href="en.html">EN</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Bouton de langue pour les écrans plus petits, caché sur les écrans larges -->
+          <div class="d-lg-none w-100 text-center mt-2">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle bg-primary" href="#" role="button" id="dropdownMenuLink2"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Langue
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                <li><a class="dropdown-item" href="nl.html">NL</a></li>
+                <li><a class="dropdown-item" href="en.html">EN</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </nav>
   </header>
+
 
   <main>
     <section class="my-5" id="Mahop">
@@ -80,7 +95,7 @@
               <button type="submit" class="btn btn-primary btn-lg">Télécharger mon CV</button>
             </form>
           </div>
-          <div class="col-12 col-md-6 photo">
+          <div class="col-12 col-md-5 photo">
 
             <img src="img/steph1.jpeg" alt="photo de steph" class="w-100">
           </div>
