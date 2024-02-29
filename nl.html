@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="scss/style.css" />
+  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
@@ -17,42 +18,61 @@
   <title>Document</title>
 </head>
 
-<body> een nieuw stappenplan
+<body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"><span class="me-1 p-1 text-white rounded-1 bg-primary">Stephane</span> Mahop
-        </a>
+      <div class="container bg-primary">
+        <a class="navbar-brand text-white" href="#">Stephane Mahop</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Navigatie wisselen">
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Navigatie omschakelen">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#Mahop">Wie ben ik?</a>
+              <a class="nav-link text-white" href="#Mahop">Wie ben ik?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#expertise">Expertise</a>
+              <a class="nav-link text-white" href="#expertise">Expertises</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link text-white" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="en.html" class="btn btn-primary rounded-pill" role="button">EN</a>
-            </li>
-            <li class="nav-item">
-              <a href="index.html" class="btn btn-primary rounded-pill" role="button">FR</a>
+              <a class="nav-link text-white" href="#contact">Contact</a>
             </li>
           </ul>
+          <!-- Taalknop voor grotere schermen, verborgen op kleinere schermen -->
+          <div class="d-none d-lg-block">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle bg-primary" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Taal
+              </a>
+              <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="index.html">FR</a></li>
+                <li><a class="dropdown-item" href="en.html">EN</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Taalknop voor kleinere schermen, verborgen op grotere schermen -->
+          <div class="d-lg-none w-100 text-center mt-2">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle bg-primary" href="#" role="button" id="dropdownMenuLink2"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Taal
+              </a>
+              <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuLink2">
+                <li><a class="dropdown-item" href="index.html">FR</a></li>
+                <li><a class="dropdown-item" href="en.html">EN</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
   </header>
+
   <main>
     <section class="my-5" id="Mahop">
       <div class="container">
