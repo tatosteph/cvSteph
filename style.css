@@ -35,3 +35,8 @@ body {
   margin-right: auto;
   /* Pousser la marque à gauche et les liens à droite */
 }
+
+.dropdown-menu-center {
+  left: 50% !important;
+  transform: translateX(-50%);
+}

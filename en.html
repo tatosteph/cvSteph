@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="scss/style.css" />
+  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
@@ -18,65 +19,83 @@
 </head>
 
 <body>
-
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"><span class="me-1 p-1 text-white rounded-1 bg-primary">Stephane</span> Mahop
-        </a>
+      <div class="container bg-primary">
+        <a class="navbar-brand text-white" href="#">Stephane Mahop</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
           aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#Mahop">Who am I?</a>
+              <a class="nav-link text-white" href="#Mahop">Who am I?</a>
+            </li> facétie non j'ai
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#expertise">Expertise</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#expertise">Expertise</a>
+              <a class="nav-link text-white" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="index.html" class="btn btn-primary rounded-pill" role="button">FR</a>
-            </li>
-            <li class="nav-item">
-              <a href="nl.html" class="btn btn-primary rounded-pill" role="button">NL</a>
+              <a class="nav-link text-white" href="#contact">Contact</a>
             </li>
           </ul>
+          <!-- Language button for large screens, hidden on smaller screens -->
+          <div class="d-none d-lg-block">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle bg-primary" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Language
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="nl.html">NL</a></li>
+                <li><a class="dropdown-item" href="index.html">FR</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Language button for smaller screens, hidden on large screens -->
+          <div class="d-lg-none w-100 text-center mt-2">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle bg-primary" href="#" role="button" id="dropdownMenuLink2"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Language
+              </a>
+              <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuLink2">
+                <li><a class="dropdown-item" href="nl.html">NL</a></li>
+                <li><a class="dropdown-item" href="en.html">EN</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
   </header>
+
+
   <main>
     <section class="my-5" id="Mahop">
       <div class="container">
         <div class="row gy-4 gy-md-0 d-flex align-items-center">
           <div class="col-12 col-md-6 profildescription">
-            <h1 class="fw-bold">Mahop Yves Stephane Front-end Developer</h1>
-            <h2 class="fw-light">Welcome to my creative universe</h2>
+            <h1 class="fw-bold">Front-end Developer</h1>
+            <h2 class="fw-light">Welcome to my universe</h2>
             <h3 class="fw-light">About me</h3>
             <p class="fw-light lh-lg">
-              "With a solid 10-year experience as a warehouse worker, I decided in 2020 to reorient my career towards a
-              field
-              that has long interested me: front-end development. For this, I underwent a specialized two-year training.
-              I am accustomed to working both in a team and independently. Although I am new to the development sector,
-              I am very motivated to apply my knowledge and continue learning. I live with my wife and son and I am
-              passionate
-              about sports and travel, which are for me sources of balance and inspiration."
-            </p>
-            <form action="/cv/CV Yves Stephane Mahop (5).pdf">
+              "With a solid experience of 10 years as a warehouseman, I decided in 2020 to reorient myself
+              professionally towards a field that has interested me for a long time: front-end development. For
+              this, I followed a specialized two-year training. I am used to working in a team as well as
+              independently. Although I am new to the development sector, I am very motivated by the idea
+              of applying my knowledge and continuing to learn. I live with my family and I am passionate about
+              sports and travel, which are for me sources of balance and inspiration." </p>
+            <form action="cv/CV Yves Stephane Mahop (5).pdf">
               <button type="submit" class="btn btn-primary btn-lg">Download my CV</button>
             </form>
           </div>
-          <div class="col-12 col-md-6 photo">
-            <img src="img/steph1.jpeg" alt="steph's photo" class="w-100">
+          <div class="col-12 col-md-5 photo">
+
+            <img src="img/steph1.jpeg" alt="photo of steph" class="w-100">
           </div>
         </div>
       </div>
@@ -84,28 +103,29 @@
     <section class="py-5 bg-light" id="expertise">
       <div class="container">
         <h2 class="fw-bold">My expertise</h2>
-        <h3 class="fw-light fs-5">Web development and design</h3>
+
+        <h3 class="fw-light fs-5 mt-4">Web development and design</h3>
         <div class="row gy-4 mt-5">
           <div class="col-12 col-md-7">
             <div class="bg-white p-3 d-grid gap-5">
               <div class="row align-items-center">
                 <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
                   <div class="d-flex align-items-center">
-                    <i class="fa-brands fa-html5 fa-2x me-3 text-black fs-3"></i>
+                    <i class="fa-brands fa-html5 fa-2 me-3 tato text-black fs-3"></i>
                     <p class="fw-bold m-0">HTML5</p>
                   </div>
                 </div>
                 <div class="col mx-5">
                   <div class="progress" data-bs-toggle="tooltip" data-bs-placement="top" title="70%">
-                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-                      aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow=" 70"
+                      aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
               </div>
               <div class="row align-items-center">
                 <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
                   <div class="d-flex align-items-center">
-                    <i class="fa-brands fa-css3-alt me-3 text-black fs-3"></i>
+                    <i class="fa-brands fa-css3-alt me-3 tato text-black fs-3"></i>
                     <p class="fw-bold m-0">CSS</p>
                   </div>
                 </div>
@@ -119,7 +139,7 @@
               <div class="row align-items-center">
                 <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
                   <div class="d-flex align-items-center">
-                    <i class="fa-brands fa-bootstrap me-3 text-black fs-3"></i>
+                    <i class="fa-brands fa-bootstrap me-3 tato text-black fs-3"></i>
                     <p class="fw-bold m-0">BOOTSTRAP</p>
                   </div>
                 </div>
@@ -133,8 +153,8 @@
               <div class="row align-items-center">
                 <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
                   <div class="d-flex align-items-center">
-                    <i class="fa-brands fa-js me-3 text-black fs-3"></i>
-                    <p class="fw-bold m-0">JS</p>
+                    <i class="fa-brands fa-js me-3 tato text-black fs-3"></i>
+                    <p class="fw-bold m-0">JAVASCRIPT</p>
                   </div>
                 </div>
                 <div class="col mx-5">
@@ -147,7 +167,7 @@
               <div class="row align-items-center">
                 <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
                   <div class="d-flex align-items-center">
-                    <i class="fa-brands fa-vuejs me-3 text-black fs-3"></i>
+                    <i class="fa-brands fa-vuejs me-3 tato text-black fs-3"></i>
                     <p class="fw-bold m-0">VUE JS</p>
                   </div>
                 </div>
@@ -163,52 +183,55 @@
         </div>
         <h3 class="fw-light fs-5 my-5">My Languages</h3>
         <div class="row gy-4 mt-5">
-          <div class="col-12 col-md-7">
-            <div class="bg-white p-3 d-grid gap-5">
+          <div class="col-12">
+            <div class="bg-white p-3">
               <div class="row align-items-center">
                 <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
                   <div class="d-flex align-items-center">
                     <p class="fw-bold m-0">FRENCH</p>
                   </div>
                 </div>
-                <div class="col mx-5">
+                <div class="col">
                   <div class="progress" data-bs-toggle="tooltip" data-bs-placement="top" title="90%">
-                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-                      aria-valuemax="100">Native</div>
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="90"
+                      aria-valuemin="0" aria-valuemax="100"> <span class="d-none d-md-inline">native</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-7">
-            <div class="bg-white p-3 d-grid gap-5">
+          <div class="col-12">
+            <div class="bg-white p-3">
               <div class="row align-items-center">
                 <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
                   <div class="d-flex align-items-center">
                     <p class="fw-bold m-0">DUTCH</p>
                   </div>
                 </div>
-                <div class="col mx-5">
+                <div class="col">
                   <div class="progress" data-bs-toggle="tooltip" data-bs-placement="top" title="50%">
                     <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                      aria-valuemax="100">understanding</div>
+                      aria-valuemax="100"> <span class="d-none d-md-inline">good
+                        understanding</span></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-7">
-            <div class="bg-white p-3 d-grid gap-5">
+          <div class="col-12">
+            <div class="bg-white p-3">
               <div class="row align-items-center">
                 <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
                   <div class="d-flex align-items-center">
                     <p class="fw-bold m-0">ENGLISH</p>
                   </div>
                 </div>
-                <div class="col mx-5">
+                <div class="col">
                   <div class="progress" data-bs-toggle="tooltip" data-bs-placement="top" title="20%">
                     <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0"
-                      aria-valuemax="100">Basics</div>
+                      aria-valuemax="100"> <span class="d-none d-md-inline">basics</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -217,20 +240,20 @@
         </div>
       </div>
     </section>
-
     <section class="py-5" id="portfolio">
       <div class="container">
-        <h2 class="fw-bold">My portfolio</h2>
-        <h3 class="fw-light">Personal and professional projects</h3>
+        <h2 class="fw-bold mb-5">My portfolio</h2>
+        <h3 class="fw-light mb-5">Personal and professional projects</h3>
+
         <div class="row g-4">
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card">
               <img src="https://picsum.photos/300/200?random=1" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Project 1</h5>
+                <h5 class="card-title">Project 1 </h5>
                 <p class="card-text">QUIZ</p>
-                <a href="https://codepen.io/tatosteph/pen/OJvQXOg" class="btn"
-                  style="background-color: #6610f2; color: white;">Go somewhere</a>
+                <a href="https://codepen.io/tatosteph/pen/OJvQXOg" class="btn bg-primary" style=" color: white">Go
+                  somewhere</a>
               </div>
             </div>
           </div>
@@ -239,9 +262,9 @@
               <img src="https://picsum.photos/300/200?random=2" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Project 2</h5>
-                <p class="card-text">CCOUNTER</p>
-                <a href="https://codepen.io/tatosteph/pen/abGxgmg" class="btn"
-                  style="background-color: #6610f2; color: white;">Go somewhere</a>
+                <p class="card-text">COUNTER</p>
+                <a href="https://codepen.io/tatosteph/pen/abGxgmg" class="btn bg-primary" style=" color: white">Go
+                  somewhere</a>
               </div>
             </div>
           </div>
@@ -249,21 +272,22 @@
             <div class="card h-100">
               <img src="https://picsum.photos/300/200?random=3" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Projet 3</h5>
-                <p class="card-text">BMI (Body Mass Index)</p>
-                <a href="https://codepen.io/tatosteph/pen/KKormeQ" class="btn"
-                  style="background-color: #6610f2; color: white;">Voir plus</a>
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">BMI</p>
+                <a href="https://codepen.io/tatosteph/pen/KKormeQ" class="btn bg-primary" style=" color: white">Go
+                  somewhere</a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="
+      col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card h-100">
               <img src="https://picsum.photos/300/200?random=4" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Projet 4</h5>
+                <h5 class="card-title">Project 4</h5>
                 <p class="card-text">SLIDER</p>
-                <a href="https://codepen.io/tatosteph/pen/ExgEYKZ" class="btn"
-                  style="background-color: #6610f2; color: white;">Voir plus</a>
+                <a href="https://codepen.io/tatosteph/pen/ExgEYKZ" class="btn bg-primary" style=" color: white">Go
+                  somewhere</a>
               </div>
             </div>
           </div>
@@ -272,24 +296,24 @@
     </section>
     <section class="bg-light py-5 shadow-sm p-3 mb-5" id="contact">
       <div class="container py-5">
-        <h2 class="fw-bold">Do you have a web creation project?</h2>
-        <h3 class="mb-5 fw-light">Let's discuss it over a coffee</h3>
+        <h2 class="fw-bold">A web creation project?</h2>
+        <h3 class="mb-5 fw-light mt-4">Let's discuss it over a coffee</h3>
         <div class="row gy-4">
           <div class="col-12 col-md-5">
-            <img src="img/grab-a-coffee.jpg" alt="café" class="w-100">
+            <img src="img/grab-a-coffee.jpg" alt="coffee" class="w-100">
           </div>
           <div class="col-12 offset-md-1 col-md-6">
             <form action="https://formspree.io/f/xqkrbkzr" method="POST" class="row gy-4">
               <div class="col-6">
-                <label for="prenom" class="form-label">First Name</label>
+                <label for="prenom" class="form-label">First name</label>
                 <input type="text" class="form-control" id="prenom" name="prenom">
               </div>
               <div class="col-6">
-                <label for="nom" class="form-label">Name</label>
+                <label for="nom" class="form-label">Last name</label>
                 <input type="text" class="form-control" id="Nom" name="nom">
               </div>
               <div class="col-12">
-                <label for="InputEmail1" class="form-label">E-mail</label>
+                <label for="InputEmail1" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" name="email">
               </div>
               <div class="col-12">
@@ -297,35 +321,30 @@
                 <textarea class="form-control" id="Textarea" rows="3" name="message"></textarea>
               </div>
               <div class="col-12">
-                <button type="submit" class="btn w-100" style="background-color: #6610f2; color: white;">Submit</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="py-4">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-12 col-md-4">
-            <a class="text-decoration-none text-dark" href="#"><span
-                class="me-1 tato p-1 text-white rounded-1 bg-primary">Stephane</span> Mahop</a>
-          </div>
-          <div class="col-12 col-md-4">
-            <button type="button" class="btn btn-body" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            </button>
-          </div>
-          <div class="col-12 col-md-4 text-md-end">
-            <ul class="list-inline fs-3">
-              <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
-                <a class="text-reset" href="https://www.linkedin.com/in/stephane-mahop-2410311a7/" target="_blank"><i
-                    class="bi bi-linkedin"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+                <button type="submit" class="btn bg-primary" style=" color: white">Send</button </div> </form> </div>
+                  </div> </div> </div> </section> <footer class="py-4">
+                <div class="container">
+                  <div class="row gy-4">
+                    <div class="col-12 col-md-4">
+                      <a class="text-decoration-none text-dark" href="#"><span
+                          class="me-1 tato p-1 text-white rounded-1 bg-primary ">Top of page</span> </a>
+
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <button type="button" class="btn btn-body" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-4 text-md-end">
+                      <ul class="list-inline fs-3">
+                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+                          <a class="text-reset" href="https://www.linkedin.com/in/stephane-mahop-2410311a7/"
+                            target="_blank"><i class="bi bi-linkedin"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                </footer>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
